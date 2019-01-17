@@ -1,0 +1,16 @@
+/* TEAM */
+
+Name: JayZ
+Role: Developer
+
+Name: Ana
+Role: Developer
+
+Name: Adel
+Role: Developer
+
+/* SITE */
+
+Standards: HTML5, CSS3, ES6
+
+
