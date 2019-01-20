@@ -3,6 +3,14 @@
 /* 
 	color palette : 
 
+	#123C69 (Dark blue)
+
+	#BAB2B5 (Gray)
+
+	#EEE2DC (Dirty white)
+
+	#EDC7B7 (Orange)
+
 	fonts: 
 
 */
@@ -17,7 +25,7 @@ html {
 }
 
 main {
-
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*-------------------
@@ -40,6 +48,59 @@ footer {
 
 }
 
+.page-title {
+	text-align: center;
+}
+
+/*---------------
+    Tours page 
+----------------*/
+
+.tours {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #BAB2B5;
+}
+
+.tour-card {
+	margin: 5%;
+	width: 300px;
+	padding: 10px;
+	box-shadow: 1px 2px 5px gray;
+	transition: 0.5s;
+	background-color: #EEE2DC;
+}
+
+.tour-card:hover {
+	box-shadow: 3px 5px 5px gray;	
+}
+
+.tour-title {
+	margin: 0 auto;
+	text-align: center;
+	margin: 5px;
+}
+
+.tour-card img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tour-card a {
+	text-decoration: none;
+	padding: 5px;
+	transition: 1s;
+	background-color: coral;
+	color: white;
+	border: 1px solid coral;
+}
+
+.tour-card a:hover {
+	box-shadow: 1px 2px 5px coral;
+}
 /*-------------------
     Media Queries 
 --------------------*/
