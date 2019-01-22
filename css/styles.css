@@ -3,6 +3,12 @@
 /* 
 	color palette : 
 
+<<<<<<< HEAD
+#123C69 reddish i think ?
+#BAB2B5
+#EEE2DC
+#EDC7B7
+=======
 	#123C69 (Dark blue)
 
 	#BAB2B5 (Gray)
@@ -10,8 +16,12 @@
 	#EEE2DC (Dirty white)
 
 	#EDC7B7 (Orange)
+>>>>>>> 0b10d1090043984522191ea98baabbeccd0a366a
 
 	fonts: 
+<link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
 
 */
 
@@ -47,6 +57,10 @@ nav {
 footer {
 
 }
+<<<<<<< HEAD
+body {
+	margin: 0px;
+=======
 
 .page-title {
 	text-align: center;
@@ -100,6 +114,7 @@ footer {
 
 .tour-card a:hover {
 	box-shadow: 1px 2px 5px coral;
+>>>>>>> 0b10d1090043984522191ea98baabbeccd0a366a
 }
 /*-------------------
     Media Queries 
@@ -111,4 +126,14 @@ footer {
     Animations keyframes 
 ---------------------------*/
 
-
+/*--------------------------
+   Natural html css - Adel
+---------------------------*/
+.nature_image{
+	background-image: url(../aurora.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 400px;
+}
