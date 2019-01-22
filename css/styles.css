@@ -16,7 +16,7 @@
 	#EEE2DC (Dirty white)
 
 	#EDC7B7 (Orange)
->>>>>>> 0b10d1090043984522191ea98baabbeccd0a366a
+
 
 	fonts: 
 <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
@@ -28,7 +28,7 @@ font-family: 'Pacifico', cursive;
 /*----------------
     page setup 
 -----------------*/
-\
+
 html {
 	margin: 0;
 	padding: 0;
@@ -58,11 +58,7 @@ footer {
 
 }
 
-body {
-
-	margin: 0px;
-
-}
+/* Title */
 
 .page-title {
 	text-align: center;
@@ -117,6 +113,7 @@ body {
 .tour-card a:hover {
 	box-shadow: 1px 2px 5px coral;
 }
+
 /*-------------------
     Media Queries 
 --------------------*/
@@ -131,8 +128,9 @@ body {
    Natural html css - Adel
 ---------------------------*/
 .tour_image{
+
 	background-image: url(../media/aurora.jpg);
-    background-size: cover;
+	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
