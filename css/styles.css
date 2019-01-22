@@ -34,6 +34,10 @@ html, body {
 	padding: 0;
 }
 
+body {
+    background-color: #EDC7B7;
+}
+
 main {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -96,7 +100,7 @@ footer {
 	flex-flow: row wrap;
 	justify-content: center;
 	margin: 0 auto;
-	background-color: #BAB2B5;
+	/*background-color: #BAB2B5;*/
 }
 
 .tour-card {
