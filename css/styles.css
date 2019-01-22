@@ -126,21 +126,50 @@ footer {
 /*---------------
     Home page 
 ----------------*/
+
+.about {
+    font-family: 'Oswald', sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-icons {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-desc {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about img {
+    width: 100px;
+    object-fit: contain;
+}
+
 .tour-overview {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    font-family: Oswald;
+    font-family: 'Oswald', sans-serif;
     justify-content: space-between;
 }
 
-.tour-overview h1 {
+.tour-overview h1, .about h1 {
     width: 100%;
     color: #123C69;
     margin: 0 0 10px 0;
     font-size: 50px;
+    text-align: center;
 }
 
 .tour-overview a {
@@ -148,7 +177,6 @@ footer {
     width: 330px;
     height: 220px;
     color: white;
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     position: relative;
     background-size: cover;
