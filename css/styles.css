@@ -17,6 +17,7 @@
 
 	#EDC7B7 (Orange)
 
+
 	fonts: 
 <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
 font-family: 'Oswald', sans-serif;
@@ -57,11 +58,7 @@ footer {
 
 }
 
-body {
-
-	margin: 0px;
-
-}
+/* Title */
 
 .page-title {
 	text-align: center;
@@ -116,6 +113,7 @@ body {
 .tour-card a:hover {
 	box-shadow: 1px 2px 5px coral;
 }
+
 /*-------------------
     Media Queries 
 --------------------*/
@@ -129,7 +127,7 @@ body {
 /*--------------------------
    Natural html css - Adel
 ---------------------------*/
-.nature_image{
+.tour_image{
 	background-image: url(../aurora.jpg);
     background-size: cover;
     background-repeat: no-repeat;
