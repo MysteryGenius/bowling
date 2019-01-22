@@ -42,6 +42,15 @@ main {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*general styles*/
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 2em 0;
+}
+
 /*-------------------
     Element styles 
 ---------------------*/
@@ -82,7 +91,29 @@ nav li {
 /* footer */
 
 footer {
+    background-color: #123C69;
+    text-align: center;
+    color: #CCC5C2;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5em 0;
+}
 
+.footer-header {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.socialmedia {
+    display: inline-flex;
+    margin: 0.5em 0;
+}
+
+.socialmedia a {
+    margin: 0 20px;
+}
+
+.desginers {
+    font-size: 10px;
 }
 
 /* Title */
@@ -91,17 +122,69 @@ footer {
 	text-align: center;
 }
 
+
+/*---------------
+    Home page 
+----------------*/
+.tour-overview {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Oswald;
+    justify-content: space-between;
+}
+
+.tour-overview h1 {
+    width: 100%;
+    color: #123C69;
+    margin: 0 0 10px 0;
+    font-size: 50px;
+}
+
+.tour-overview a {
+    display: block;
+    width: 330px;
+    height: 220px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    background-size: cover;
+    border-radius: 0.5em;
+}
+
+.tour-overview span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modern {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/great pyramid of giza.jpg");
+}
+
+.natural {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/pretty pretty aurora.jpg");
+}
+
+.ancient {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/great wall of china.jpg");
+}
+
+
 /*---------------
     Tours page 
 ----------------*/
-
-.tours {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 0 auto;
-	/*background-color: #BAB2B5;*/
-}
+    .tours {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 auto;
+        /*background-color: #BAB2B5;*/
+    }
 
 .tour-card {
 	margin: 5%;
@@ -167,4 +250,17 @@ footer {
 	display: flex;
 	justify-content: center;
 	
+}
+
+/*----------------
+General animations
+------------------*/
+
+.hover-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
