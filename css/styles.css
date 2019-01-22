@@ -156,11 +156,17 @@ footer {
 
 .tour-overview {
     width: 90%;
+    font-family: 'Oswald', sans-serif;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tour-overview-flex {
+    display: flex;
     flex-wrap: wrap;
-    font-family: 'Oswald', sans-serif;
     justify-content: space-between;
 }
 
@@ -172,8 +178,7 @@ footer {
     text-align: center;
 }
 
-.tour-overview a {
-    display: block;
+.tour-overview-flex div {
     width: 330px;
     height: 220px;
     color: white;
@@ -202,6 +207,14 @@ footer {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/great wall of china.jpg");
 }
 
+.tour-overview .button {
+    display: inline-block;
+    padding: 0.5em 1em;;
+    background-color: #BAB2B5;
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+}
 
 /*---------------
     Tours page 
