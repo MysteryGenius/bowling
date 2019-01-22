@@ -128,10 +128,16 @@ footer {
    Natural html css - Adel
 ---------------------------*/
 .tour_image{
-	background-image: url(../aurora.jpg);
-    background-size: cover;
+
+	background-image: url(../media/aurora.jpg);
+	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
     height: 400px;
+}
+#Natural_Tour{
+	display: flex;
+	justify-content: center;
+	
 }
