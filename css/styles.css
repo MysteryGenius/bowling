@@ -47,7 +47,9 @@ nav {
 footer {
 
 }
-
+body {
+	margin: 0px;
+}
 /*-------------------
     Media Queries 
 --------------------*/
@@ -62,11 +64,10 @@ footer {
    Natural html css - Adel
 ---------------------------*/
 .nature_image{
-	background-image: url();
+	background-image: url(../aurora.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
-    width: 100%;
-    height: 100%;
+    height: 400px;
 }
