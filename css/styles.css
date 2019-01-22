@@ -57,10 +57,12 @@ nav {
 footer {
 
 }
-<<<<<<< HEAD
+
 body {
+
 	margin: 0px;
-=======
+
+}
 
 .page-title {
 	text-align: center;
@@ -114,7 +116,6 @@ body {
 
 .tour-card a:hover {
 	box-shadow: 1px 2px 5px coral;
->>>>>>> 0b10d1090043984522191ea98baabbeccd0a366a
 }
 /*-------------------
     Media Queries 
