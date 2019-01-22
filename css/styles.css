@@ -130,11 +130,16 @@ body {
 /*--------------------------
    Natural html css - Adel
 ---------------------------*/
-.nature_image{
-	background-image: url(../aurora.jpg);
+.tour_image{
+	background-image: url(../media/aurora.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
     height: 400px;
+}
+#Natural_Tour{
+	display: flex;
+	justify-content: center;
+	
 }
