@@ -15,7 +15,7 @@
 
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+	<script src="js/natural.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
 <body>
@@ -75,48 +75,50 @@
             
         
     </section>
-	<section class="natural_form">
-     <form>
+	<section class="general-form">
+     <form >
         <h2>Sightseeing Activities in Singapore Booking Form</h2>
+			<fieldset>
+                <legend>Tour Detail</legend>
+                <select id="tours" name="Tourgroup" required>
+                    <option value="" disabled selected>Please Select...</option>
+                    <option name="tour" value="Aurora Tour">Aurora Tour</option>
+                    <option name="tour" value="Grand Canyon Tour">Grand Canyon Tour</option>
+                    <option name="tour" value="Great Barrier Reef tour">Great Barrier Reef tour</option>
+                    <option name="tour" value="Mount Everest Tour">Mount Everest Tour</option>
+                </select><br>
 
-            <!-- tour -->
-            <fieldset>
-                <legend><b>Tour Detail</b></legend>
-                <select name="Tourgroup" required>
-                    <option value="" hidden="">Please Select...</option>
-                    <option name="tour" value="Beautiful Sentosa Island Afternoon Tour">Aurora Tour</option>
-                    <option name="tour" value=" Half Day City Tour"> Grqand Canyon Tour</option>
-                    <option name="tour" value="Singapore River Cruise"0>Great Barrier Reef tour</option>
-                    <option name="tour" value="Christmas Light-Up Tour">Mount Everest Tour</option>
-                </select>
-                <p></p>
-                <label>Date: &nbsp;</label>
-                <input type="date" name="date" min="2018-10-29" max="2018-11-04" required>
+                <label>Date:</label>
+                <input id="dateish" type="date" name="date" min="2019-10-29" max="2019-11-04" required><br>
 
-                <p></p>
-                <label>Adult: &nbsp;</label>
-                <input id="quant" name="adult" type="number" min="1" max="4" value="1" required>
-                <label>Child: &nbsp;</label>
-                <input id="quant" name="child" type="number" min="1" max="4" value="1" required>
-            </fieldset>
-            <fieldset>
-                <legend><b>Customer Detail</b></legend>
-                <label>Name: &nbsp;</label>
-                <input type="text" name="name" autocomplete="on" required>
-                <p></p>
-                <label>Email: &nbsp; </label>
-                <input type="email" name="email" placeholder="Enter email addresses" required>
-                <p></p>
-               </fieldset>
+                <label>Adult:</label>
+                <input id="adult" name="adult" type="number" min="1" max="4" value="1" required><br>
+
+                <label>Child:</label>
+                <input id="child" name="child" type="number" min="0" max="4" value="0" required>
+       		</fieldset>
+        	<fieldset>
+                <legend>Customer Detail</legend>
+                <label>Name:</label>
+                <input id="name" type="text" name="name" autocomplete="on" placeholder="Enter your name" required>
+
+                <label>Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter email addresses" required>
+
+           </fieldset>
             <fieldset>
                 <label><b>Booking Detail</b></label>
+                <p id="details-tour"></p>
+                <p id="details-adults"></p>
+                <p id="details-children"></p>
+                <p id="details-name"></p>
+                <p id="details-email"></p>
+                <p id="details-date"></p>
+                <p id="details-price"></p>
             </fieldset>
-
-            <p></p>
             <input type="submit" name="submit"class="submit">
             <input type="reset" name="reset" class="reset">
-    </form>
-   
+			</form>
     </section>
 <footer>
 
