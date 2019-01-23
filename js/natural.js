@@ -16,13 +16,13 @@ const ancientTourPrices = (tour) => {
 			return 500000
 			break;
 		case "Paricutin Tour":
-			return 500000
+			return 40000
 			break;
 		case "Victoria Falls Tour":
-			return 500000
+			return 900000
 			break;
 		case "Harbor of Rio de Janeiro Tour":
-			return 500000
+			return 6000
 			break;
 	}
 }
