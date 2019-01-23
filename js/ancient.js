@@ -12,7 +12,7 @@ const ancientTourPrices = (tour) => {
 			return 1500
 			break;
 
-		case "Mount Everest Tour":
+		case "Full package Tour":
 			return 500000
 			break;
 	}
@@ -31,7 +31,7 @@ function displayDetails() {
 	document.getElementById("details-children").innerHTML = `Children : ${totalChildren}`;
 	document.getElementById("details-name").innerHTML = `Name : ${name}`;
 	document.getElementById("details-email").innerHTML = `Email : ${email}`;
-	document.getElementById("details-date").innerHTML = `Date : ${selectedTour}`;
+	document.getElementById("details-date").innerHTML = `Date : ${dateish}`;
 	document.getElementById("details-price").innerHTML = `Total Price : ${tourPrice}`;
 }
 
