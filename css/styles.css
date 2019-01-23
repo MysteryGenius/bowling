@@ -148,7 +148,11 @@ a[href="mailto:7wonderes@xyz.com"] {
 
 .page-title {
 	text-align: center;
+<<<<<<< HEAD
     font-size: 10vw;
+=======
+    font-size: 55px;
+>>>>>>> 91faeac8e5917f5aa40356313624b31899bbd6da
     font-weight: 100;
 }
 
@@ -329,7 +333,7 @@ a[href="mailto:7wonderes@xyz.com"] {
     }
 
     .modern-desc {
-        padding: 0 100px !important;
+        padding: 0 50px !important;
     }
 }
 
