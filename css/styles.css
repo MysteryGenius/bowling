@@ -284,7 +284,7 @@ footer {
 #Natural_Tour{
 	display: flex;
 	justify-content: center;
-<<<<<<< HEAD
+
 	font-family: 'Fredericka the Great', cursive;
 }
 .info{
@@ -342,10 +342,19 @@ footer {
 	display: flex;
 	justify-content: center;
 }
-=======
+
 	
 }
 
+/*--------------------------
+        Credits -Adel
+---------------------------*/
+#creditsh2 {
+	/*display: flex;
+	justify-content: center;
+	font-size: 50px;*/
+	text-align: center;
+}
 /*----------------
 General animations
 ------------------*/
@@ -358,9 +367,7 @@ General animations
 .hover-shadow:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-<<<<<<< HEAD
->>>>>>> 6d12424c6a9fcad888f79c9d31e4da93d98ebae5
-=======
+
 
 @keyframes loaderDown {
   0% {
@@ -381,4 +388,4 @@ General animations
     transform: translateY(0);
   }
 }
->>>>>>> 7da7766307c1d1c33eb5cd9cc00321096e6a1d84
+
