@@ -2,10 +2,10 @@
 
 /* 
 	color palette : 
-#123C69 reddish i think ?
-#BAB2B5
-#EEE2DC
-#EDC7B7
+    #123C69 reddish i think ?
+    #BAB2B5
+    #EEE2DC
+    #EDC7B7
 
 	#123C69 (Dark blue)
 
@@ -37,6 +37,9 @@ body {
     background-color: #EDC7B7;
 }
 
+main {
+    animation: loaderUp 0.5s 0s 1 ease-out;
+}
 /*general styles*/
 a {
     text-decoration: none;
@@ -44,6 +47,29 @@ a {
 
 section {
     margin: 2em 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 /*-------------------
@@ -61,7 +87,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    animation: loaderDown 1s 0s 1 ease-out;
+    animation: loaderDown 0.5s 0s 1 ease-out;
 }
 
 header a {
@@ -122,6 +148,8 @@ a[href="mailto:7wonderes@xyz.com"] {
 
 .page-title {
 	text-align: center;
+    font-size: 12em;
+    font-weight: 100;
 }
 
 
@@ -565,6 +593,8 @@ General animations
     transform: scaleX(1);
 }
 
+
+
 @keyframes loaderDown {
   0% {
     transform: translateY(-100%);
@@ -573,13 +603,30 @@ General animations
   100% {
     transform: translateY(0);
     visibility: 1;  
-  }
+}
+}
 
 
 @keyframes loaderUp {
   0% {
+    visibility: 0;
     transform: translateY(25%);
-  
+}
   100% {
+    visibility: 1;
     transform: translateY(0);
-  }
+}
+}
+
+#isItLoaded {
+  display: none;
+}
+#loading {
+  z-index: 10;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
