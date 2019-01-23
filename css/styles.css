@@ -75,7 +75,7 @@ header a {
 }
 
 .logo {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 70px;
 }
 
@@ -211,7 +211,7 @@ footer {
 
 .tour-overview .button {
     display: inline-block;
-    padding: 0.5em 1em;;
+    padding: 0.5em 1em;
     background-color: #BAB2B5;
     color: black;
     text-align: center;
@@ -316,15 +316,19 @@ footer {
 
 /*each tour*/
 .naturaltours{
-	width: 500px;
+	width: 250px;
 	margin: 10px;
+
 }
 /*separating the image by using display: block;*/
 .naturaltours img{
 	display: block;
+    height: 250px;
 	margin: 0px auto ;
 	width: 100%;
 	border-radius: 60%;
+    border-style: solid;
+    border-color: white
 }
 /*centralising the paragraph*/
 .naturaltours p{
@@ -343,17 +347,76 @@ footer {
 	justify-content: center;
 }
 
-	
+
+/*------------------
+    Ancient page
+--------------------*/
+
+.ancient-description {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ancient-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.ancient-description img {
+    width: 300px;
+    display: block;
+    margin: 1vw;
+    border: 5px solid white;
+    box-shadow: 2px 3px 5px gray;
+    transition: 0.2s;
+}
+
+.ancient-description img:hover {
+    box-shadow: 3px 4px 7px gray;
+}
+
+.ancient-list-title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.ancient-list {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.ancient-list li {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.ancient-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ancient-form input {
+    margin: 10px 5px;
 }
 
 /*--------------------------
         Credits -Adel
 ---------------------------*/
+.credit_container{
+    height:400px;
+}
 #creditsh2 {
 	/*display: flex;
 	justify-content: center;
 	font-size: 50px;*/
 	text-align: center;
+}
+.credits {
+    display: flex;
+    justify-content: space-evenly;
 }
 /*----------------
 General animations
@@ -378,14 +441,12 @@ General animations
     transform: translateY(0);
     visibility: 1;  
   }
-}
+
 
 @keyframes loaderUp {
   0% {
     transform: translateY(25%);
-  }
+  
   100% {
     transform: translateY(0);
   }
-}
-
