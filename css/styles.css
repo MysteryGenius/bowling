@@ -531,22 +531,7 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 10px 5px;
 }
 
-/*--------------------------
-        Credits -Adel
----------------------------*/
-.credit_container{
-    height:400px;
-}
-#creditsh2 {
-	/*display: flex;
-	justify-content: center;
-	font-size: 50px;*/
-	text-align: center;
-}
-.credits {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 /*------------------
     Modern page
