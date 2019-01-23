@@ -418,12 +418,12 @@ a[href="mailto:7wonderes@xyz.com"] {
     line-height: 2.5em;
 }
 
-.ancient-form {
+.general-form {
     width: 50%;
     margin: 0 auto;
 }
 
-.ancient-form input {
+.general-form input {
     margin: 10px 5px;
 }
 
