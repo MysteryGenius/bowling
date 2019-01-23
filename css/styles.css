@@ -148,7 +148,11 @@ a[href="mailto:7wonderes@xyz.com"] {
 
 .page-title {
 	text-align: center;
-    font-size: 12em;
+<<<<<<< HEAD
+    font-size: 10vw;
+=======
+    font-size: 55px;
+>>>>>>> 91faeac8e5917f5aa40356313624b31899bbd6da
     font-weight: 100;
 }
 
@@ -329,7 +333,7 @@ a[href="mailto:7wonderes@xyz.com"] {
     }
 
     .modern-desc {
-        padding: 0 100px !important;
+        padding: 0 50px !important;
     }
 }
 
@@ -373,32 +377,27 @@ a[href="mailto:7wonderes@xyz.com"] {
 }
 
 
-
-/*--------------------------
-    Animations keyframes 
----------------------------*/
-
 /*--------------------------
    Natural html css - Adel
 ---------------------------*/
 
 #Natural_Tour {
-	display: flex;
-	justify-content: center;
-	font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .tour-description, h3 {
-	font-family: 'Fredericka the Great', cursive;
-	display: flex;
-	justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    justify-content: center;
 }
 
 
 /*Choose your own tour*/
 .nature_form, h3 {
-	display: flex;
-	justify-content: center ;
+    display: flex;
+    justify-content: center ;
 }
 
 
@@ -406,42 +405,43 @@ a[href="mailto:7wonderes@xyz.com"] {
 /*the container*/
 /*have the tours be centralised and wrapped*/
 .Tourgroup {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
 }
 
 /*each tour*/
 .naturaltours{
-	width: 250px;
-	margin: 10px;
+    width: 250px;
+    margin: 10px;
 
 }
 /*separating the image by using display: block;*/
 .naturaltours img{
-	display: block;
+    display: block;
     height: 250px;
-	margin: 0px auto;
-	width: 100%;
-	border-radius: 60%;
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 60%;
     border-style: solid;
     border-color: white
 }
 /*centralising the paragraph*/
 .naturaltours p{
-	display: flex;
-	justify-content: center;	
+    display: flex;
+    justify-content: center;    
 }
 /*centralising the header*/
 .naturaltours h1{
-	font-family: 'Fredericka the Great', cursive;
-	display: flex;
-	justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    justify-content: center;
 }
-.natural_form {
-	display: flex;
-	justify-content: center;
+
+.natural-form {
+    width: 50%;
+    margin: 0 auto;
 }
 
 /*--------------------------
@@ -478,6 +478,18 @@ a[href="mailto:7wonderes@xyz.com"] {
     display: flex;
     justify-content: center;
 }
+
+#creditsh2 {
+    /*display: flex;
+    justify-content: center;
+    font-size: 50px;*/
+    text-align: center;
+}
+.credits {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*------------------
     Ancient page
 --------------------*/
@@ -531,8 +543,11 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 10px 5px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 97e171ae1a705c77e2e1bf9e71bf0137daf27320
 /*------------------
     Modern page
 --------------------*/
@@ -618,6 +633,9 @@ General animations
 }
 
 
+/*--------------------------
+    Animations keyframes 
+---------------------------*/
 
 @keyframes loaderDown {
   0% {
@@ -643,6 +661,7 @@ General animations
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
 
 #isItLoaded {
   display: none;
@@ -658,3 +677,5 @@ General animations
   height: 90vh;
 }
 
+=======
+>>>>>>> 97e171ae1a705c77e2e1bf9e71bf0137daf27320
