@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\media",
+    "\\media\\about",
     "\\partials"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\credits.html",
   "PreviewInSolutionExplorer": false
 }
