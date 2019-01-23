@@ -12,7 +12,7 @@ const ancientTourPrices = (tour) => {
 			return 1500
 			break;
 
-		case "Mount Everest Tour":
+		case "Full package Tour":
 			return 500000
 			break;
 	}
