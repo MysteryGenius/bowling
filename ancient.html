@@ -6,6 +6,7 @@
 	<link rel="author" href="humans.txt" />
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico|Fredericka+the+Great" rel="stylesheet">
+	<script src="js/ancient.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<header>
@@ -56,37 +57,44 @@
 			</ul>
 		</section>
 		<section class="ancient-form">
-			<form>
+			<form id="ancient">
 				<fieldset>
 	                <legend>Tour Detail</legend>
-	                <select name="Tourgroup" required>
-	                    <option value="" hidden="">Please Select...</option>
-	                    <option name="tour" value="Beautiful Sentosa Island Afternoon Tour">Aurora Tour</option>
-	                    <option name="tour" value=" Half Day City Tour"> Grqand Canyon Tour</option>
-	                    <option name="tour" value="Singapore River Cruise"0>Great Barrier Reef tour</option>
-	                    <option name="tour" value="Christmas Light-Up Tour">Mount Everest Tour</option>
+	                <select id="tours" name="Tourgroup" required>
+	                    <option value="" disabled selected>Please Select...</option>
+	                    <option name="tour" value="Time Travel Tour">Time Travel Tour</option>
+	                    <option name="tour" value="Ruins Tour">Ruins Tour</option>
+	                    <option name="tour" value="Hellenic tour">Hellenic tour</option>
+	                    <option name="tour" value="Full package Tour">Full package Tour</option>
 	                </select><br>
 
 	                <label>Date:</label>
-	                <input type="date" name="date" min="2018-10-29" max="2018-11-04" required><br>
+	                <input id="dateish" type="date" name="date" min="2019-10-29" max="2019-11-04" required><br>
 
 	                <label>Adult:</label>
-	                <input id="quant" name="adult" type="number" min="1" max="4" value="1" required><br>
+	                <input id="adult" name="adult" type="number" min="1" max="4" value="1" required><br>
 
 	                <label>Child:</label>
-	                <input id="quant" name="child" type="number" min="1" max="4" value="1" required>
+	                <input id="child" name="child" type="number" min="0" max="4" value="0" required>
            		</fieldset>
             	<fieldset>
 	                <legend>Customer Detail</legend>
 	                <label>Name:</label>
-	                <input type="text" name="name" autocomplete="on" required>
+	                <input id="name" type="text" name="name" autocomplete="on" placeholder="Enter your name" required>
 
 	                <label>Email:</label>
-	                <input type="email" name="email" placeholder="Enter email addresses" required>
+	                <input id="email" type="email" name="email" placeholder="Enter email addresses" required>
 
                </fieldset>
 	            <fieldset>
 	                <label><b>Booking Detail</b></label>
+	                <p id="details-tour"></p>
+	                <p id="details-adults"></p>
+	                <p id="details-children"></p>
+	                <p id="details-name"></p>
+	                <p id="details-email"></p>
+	                <p id="details-date"></p>
+	                <p id="details-price"></p>
 	            </fieldset>
 
             <p></p>
