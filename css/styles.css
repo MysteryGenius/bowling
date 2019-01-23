@@ -2,7 +2,6 @@
 
 /* 
 	color palette : 
-
 #123C69 reddish i think ?
 #BAB2B5
 #EEE2DC
@@ -227,7 +226,7 @@ a[href="mailto:7wonderes@xyz.com"] {
 .tour-overview .button {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: #BAB2B5; /*#BAB2B5*/
+    background-color: #BAB2B5;
     color: black; /*white*/
     border-radius: 0.2em;
     background-color: #BAB2B5;
