@@ -55,6 +55,7 @@ section {
     Element styles 
 ---------------------*/
 
+
 /* header */
 
 header {
@@ -65,6 +66,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    animation: loaderDown 1s 0s 1 ease-out;
 }
 
 header a {
@@ -356,4 +358,27 @@ General animations
 .hover-shadow:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+<<<<<<< HEAD
 >>>>>>> 6d12424c6a9fcad888f79c9d31e4da93d98ebae5
+=======
+
+@keyframes loaderDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: 0;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: 1;  
+  }
+}
+
+@keyframes loaderUp {
+  0% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+>>>>>>> 7da7766307c1d1c33eb5cd9cc00321096e6a1d84
