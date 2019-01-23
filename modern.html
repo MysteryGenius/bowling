@@ -6,17 +6,109 @@
 	<link rel="author" href="humans.txt" />
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Oswald" rel="stylesheet">
 </head>
 <body>
 	<header>
 	    <div class="logo"><a href="#">7 Wonders</a></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="tours.html">Tours</a></li>
-				<li><a href="credits.html">Credits</a></li>
+				<li><a class="underline-mid" href="index.html">Home</a></li>
+				<li><a class="underline-mid" href="tours.html">Tours</a></li>
+				<li><a class="underline-mid" href="credits.html">Credits</a></li>
 			</ul>
 		</nav>
 	</header>
+
+	<ul class="modern-container">
+		<h1>Modern Tours</h1>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/agra.jpeg" alt="Taj Mahal">
+			<p>Taj Mahal</p>
+			
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/chichen.jpeg" alt="Chichen Itza">
+			<p>Chichen Itza</p>
+			
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/china.jpeg" alt="Great Wall of China">
+			<p>Great Wall of China</p>
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/jordan.jpeg" alt="Petra">
+			<p>Petra</p>
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/peru.jpeg" alt="Machu Picchu">
+			<p>Machu Picchu</p>
+			
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/rio.jpeg" alt="Christ the Redeemer Statue">
+			<p>Christ the Redeemer Statue</p>
+		</li>
+		<li class="modern-cards">
+			<img class="shadow" src="media/modern/rome.jpeg" alt="The Roman Colosseum">
+			<p>The Roman Colosseum</p>
+		</li>
+	</ul>
+
+	<section class="modern-form">
+			<form>
+				<fieldset>
+	                <legend>Tour Detail</legend>
+	                <select name="Tourgroup" required>
+	                    <option value="" hidden="">Please Select...</option>
+	                    <option name="tour" value="Great wall of china">The Great wall of China</option>
+	                    <option name="tour" value="Taj Mahal"> Taj Mahal</option>
+	                    <option name="tour" value="Chichen Itza"0>Chichen Itza</option>
+	                    <option name="tour" value="Machu Picchu">Machu Picchu</option>
+	                    <option name="tour" value="Rio">Christ the Redeemer Statue</option>
+	                    <option name="tour" value="The Roman Colosseum">The Roman Colosseum</option>
+	                </select><br>
+
+	                <label>Date:</label>
+	                <input type="date" name="date" min="2018-10-29" max="2018-11-04" required><br>
+
+	                <label>Adult:</label>
+	                <input id="quant" name="adult" type="number" min="1" max="4" value="1" required><br>
+
+	                <label>Child:</label>
+	                <input id="quant" name="child" type="number" min="1" max="4" value="1" required>
+           		</fieldset>
+            	<fieldset>
+	                <legend>Customer Detail</legend>
+	                <label>Name:</label>
+	                <input type="text" name="name" autocomplete="on" required>
+
+	                <label>Email:</label>
+	                <input type="email" name="email" placeholder="Enter email addresses" required>
+
+               </fieldset>
+	            <fieldset>
+	                <label><b>Booking Detail</b></label>
+	            </fieldset>
+
+            <p></p>
+            <input type="submit" name="submit"class="submit">
+            <input type="reset" name="reset" class="reset">
+			</form>
+		</section>
+
+	<footer>
+	    <div class="footer-header">Discover the wonders of the world</div>
+
+	    <div class="socialmedia">
+	        <a href="https://www.instagram.com"><img src="media/social media/insta.svg" alt="Instagram" /></a>
+	        <a href="https://www.facebook.com"><img src="media/social media/facebook.svg" alt="Facebook" /></a>
+	        <a href="https://www.twitter.com"><img src="media/social media/twitter.svg" alt="Twitter" /></a>
+	    </div>
+	    
+	    <div>Contact us at <a href="mailto:7wonderes@xyz.com">7wonders@xyz.com</a></div>
+		<p class="desginers">Designed by : JayZ - Ana - Adel</p>
+	</footer>
+
 </body>
 </html>
