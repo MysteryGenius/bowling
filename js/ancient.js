@@ -1,5 +1,3 @@
-const targetForm = document.querySelector("#ancient");
-
 const ancientTourPrices = (tour) => {
 	switch (tour) {
 		case "Time Travel Tour":
@@ -14,7 +12,7 @@ const ancientTourPrices = (tour) => {
 			return 1500
 			break;
 
-		case "Full package Tour":
+		case "Mount Everest Tour":
 			return 500000
 			break;
 	}
