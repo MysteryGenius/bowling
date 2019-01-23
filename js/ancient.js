@@ -31,7 +31,7 @@ function displayDetails() {
 	document.getElementById("details-children").innerHTML = `Children : ${totalChildren}`;
 	document.getElementById("details-name").innerHTML = `Name : ${name}`;
 	document.getElementById("details-email").innerHTML = `Email : ${email}`;
-	document.getElementById("details-date").innerHTML = `Date : ${selectedTour}`;
+	document.getElementById("details-date").innerHTML = `Date : ${dateish}`;
 	document.getElementById("details-price").innerHTML = `Total Price : ${tourPrice}`;
 }
 
