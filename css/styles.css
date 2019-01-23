@@ -29,13 +29,26 @@ font-family: 'Pacifico', cursive;
     page setup 
 -----------------*/
 
-html {
+html, body {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+    background-color: #EDC7B7;
+}
+
 main {
 	font-family: 'Montserrat', sans-serif;
+}
+
+/*general styles*/
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 2em 0;
 }
 
 /*-------------------
@@ -45,17 +58,62 @@ main {
 /* header */
 
 header {
-
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
 }
 
-nav {
+header a {
+    text-decoration: none;
+    color: #AC3B61;
+}
 
+.logo {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 30px;
+}
+
+nav li {
+    margin: 0  0.5em;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* footer */
 
 footer {
+    background-color: #123C69;
+    text-align: center;
+    color: #CCC5C2;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5em 0;
+}
 
+.footer-header {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.socialmedia {
+    display: inline-flex;
+    margin: 0.5em 0;
+}
+
+.socialmedia a {
+    margin: 0 20px;
+}
+
+.desginers {
+    font-size: 12px;
 }
 
 /* Title */
@@ -64,17 +122,110 @@ footer {
 	text-align: center;
 }
 
+
+/*---------------
+    Home page 
+----------------*/
+
+.about {
+    font-family: 'Oswald', sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-icons {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-desc {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.tour-overview {
+    width: 90%;
+    font-family: 'Oswald', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tour-overview-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour-overview h1, .about h1 {
+    width: 100%;
+    color: #123C69;
+    margin: 0 0 10px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.tour-overview-flex div {
+    width: 330px;
+    height: 220px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    background-size: cover;
+    border-radius: 0.5em;
+}
+
+.tour-overview span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modern {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/great pyramid of giza.jpg");
+}
+
+.natural {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/pretty pretty aurora.jpg");
+}
+
+.ancient {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../media/great wall of china.jpg");
+}
+
+.tour-overview .button {
+    display: inline-block;
+    padding: 0.5em 1em;;
+    background-color: #BAB2B5;
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+}
+
 /*---------------
     Tours page 
 ----------------*/
-
-.tours {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 0 auto;
-	background-color: #BAB2B5;
-}
+    .tours {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 auto;
+        /*background-color: #BAB2B5;*/
+    }
 
 .tour-card {
 	margin: 5%;
@@ -140,4 +291,17 @@ footer {
 	display: flex;
 	justify-content: center;
 	
+}
+
+/*----------------
+General animations
+------------------*/
+
+.hover-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
