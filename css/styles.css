@@ -234,10 +234,6 @@ a[href="mailto:7wonderes@xyz.com"] {
     text-align: center;
     margin-top: 1em;
     font-size: 1.5em;
-
-    /*added here because .shadow isn't working*/
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s box-shadow;
 }
 
 /*---------------
@@ -418,17 +414,66 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 10px 5px;
 }
 
+
+/*------------------
+    Modern page
+--------------------*/
+.modern-container {
+    font-family: 'Oswald', sans-serif;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.modern-container p {
+    margin: 0.5em 0 1em 0;
+}
+
+.modern-container h1 {
+    width: 100%;
+}
+
+.modern-container img {
+    background-color: white;
+    padding: 5px;
+}
+
+.modern-cards {
+    width: 300px;
+    margin: 0 1em;
+}
+
+.modern-cards img {
+    object-fit: cover;
+    width: 300px;
+}
+
+.modern-form {
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    margin: 1em auto;
+}
+
+
+
+
 /*----------------
 General animations
 ------------------*/
 
-/*this is not working*/
 .shadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s box-shadow;
 }
 
-/*but this is??*/
 .shadow:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
