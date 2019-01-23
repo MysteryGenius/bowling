@@ -2,10 +2,10 @@
 
 /* 
 	color palette : 
-#123C69 reddish i think ?
-#BAB2B5
-#EEE2DC
-#EDC7B7
+    #123C69 reddish i think ?
+    #BAB2B5
+    #EEE2DC
+    #EDC7B7
 
 	#123C69 (Dark blue)
 
@@ -30,6 +30,7 @@ font-family: 'Oswald', sans-serif;
 html, body {
 	margin: 0;
 	padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -37,9 +38,8 @@ body {
 }
 
 main {
-	font-family: 'Montserrat', sans-serif;
+    animation: loaderUp 0.5s 0s 1 ease-out;
 }
-
 /*general styles*/
 a {
     text-decoration: none;
@@ -47,6 +47,29 @@ a {
 
 section {
     margin: 2em 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 /*-------------------
@@ -64,7 +87,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    animation: loaderDown 1s 0s 1 ease-out;
+    animation: loaderDown 0.5s 0s 1 ease-out;
 }
 
 header a {
@@ -125,6 +148,8 @@ a[href="mailto:7wonderes@xyz.com"] {
 
 .page-title {
 	text-align: center;
+    font-size: 12em;
+    font-weight: 100;
 }
 
 
@@ -292,6 +317,60 @@ a[href="mailto:7wonderes@xyz.com"] {
 /*-------------------
     Media Queries 
 --------------------*/
+@media only screen and (max-width: 1200px) {
+    .tour-overview-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-overview-flex > div {
+        margin: 1em 0;
+        width: 500px;
+    }
+
+    .modern-desc {
+        padding: 0 100px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 55px;
+    }
+
+    .tour-overview h1, .about h1, .wdwd h1 {
+        font-size: 40px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+
+    .about-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-desc {
+        width: 300px;
+        margin: 1em 0;
+    }
+
+    .tour-overview-flex > div {
+        margin: 1em 0;
+        width: 300px;
+    }
+
+    .general-form, .ancient-form, .modern-form {
+        width: 90% !important;
+    }
+}
 
 
 
@@ -308,9 +387,7 @@ a[href="mailto:7wonderes@xyz.com"] {
 	justify-content: center;
 	font-family: 'Fredericka the Great', cursive;
 }
-.info{
-	font-family: 'Oswald', sans-serif;
-}
+
 .tour-description, h3 {
 	font-family: 'Fredericka the Great', cursive;
 	display: flex;
@@ -353,7 +430,6 @@ a[href="mailto:7wonderes@xyz.com"] {
 }
 /*centralising the paragraph*/
 .naturaltours p{
-	font-family: 'Oswald', sans-serif;
 	display: flex;
 	justify-content: center;	
 }
@@ -430,7 +506,6 @@ a[href="mailto:7wonderes@xyz.com"] {
 }
 
 .ancient-list-title {
-    font-family: "Montserrat";
     font-weight: 500;
     font-size: 2em;
 }
@@ -456,6 +531,71 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 10px 5px;
 }
 
+/*--------------------------
+        Credits -Adel
+---------------------------*/
+.credit_container{
+    height:400px;
+}
+#creditsh2 {
+	/*display: flex;
+	justify-content: center;
+	font-size: 50px;*/
+	text-align: center;
+}
+.credits {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*------------------
+    Modern page
+--------------------*/
+.modern-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.modern-desc {
+    padding: 0 300px;
+}
+
+.modern-container p {
+    margin: 0.5em 0 1em 0;
+}
+
+.modern-container h1 {
+    width: 100%;
+}
+
+.modern-container img {
+    background-color: white;
+    padding: 5px;
+}
+
+.modern-cards {
+    width: 300px;
+    margin: 0 1em;
+}
+
+.modern-cards img {
+    object-fit: cover;
+    width: 300px;
+}
+
+.modern-form {
+    width: 50%;
+    margin: 1em auto;
+}
 
 /*----------------
 General animations
@@ -492,6 +632,8 @@ General animations
     transform: scaleX(1);
 }
 
+
+
 @keyframes loaderDown {
   0% {
     transform: translateY(-100%);
@@ -500,13 +642,32 @@ General animations
   100% {
     transform: translateY(0);
     visibility: 1;  
-  }
+}
+}
 
 
 @keyframes loaderUp {
   0% {
+    visibility: 0;
     transform: translateY(25%);
+
   }
+  
   100% {
+    visibility: 1;
     transform: translateY(0);
   }
+}
+
+#isItLoaded {
+  display: none;
+}
+#loading {
+  z-index: 10;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
