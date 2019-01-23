@@ -333,15 +333,19 @@ a[href="mailto:7wonderes@xyz.com"] {
 
 /*each tour*/
 .naturaltours{
-	width: 500px;
+	width: 250px;
 	margin: 10px;
+
 }
 /*separating the image by using display: block;*/
 .naturaltours img{
 	display: block;
-	margin: 0px auto;
+    height: 250px;
+	margin: 0px auto ;
 	width: 100%;
 	border-radius: 60%;
+    border-style: solid;
+    border-color: white
 }
 /*centralising the paragraph*/
 .naturaltours p{
@@ -359,6 +363,7 @@ a[href="mailto:7wonderes@xyz.com"] {
 	display: flex;
 	justify-content: center;
 }
+
 
 /*------------------
     Ancient page
@@ -414,6 +419,22 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 10px 5px;
 }
 
+/*--------------------------
+        Credits -Adel
+---------------------------*/
+.credit_container{
+    height:400px;
+}
+#creditsh2 {
+	/*display: flex;
+	justify-content: center;
+	font-size: 50px;*/
+	text-align: center;
+}
+.credits {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /*------------------
     Modern page
@@ -462,9 +483,6 @@ a[href="mailto:7wonderes@xyz.com"] {
     margin: 1em auto;
 }
 
-
-
-
 /*----------------
 General animations
 ------------------*/
@@ -507,13 +525,12 @@ General animations
     transform: translateY(0);
     visibility: 1;  
   }
-}
+
 
 @keyframes loaderUp {
   0% {
     transform: translateY(25%);
-  }
+  
   100% {
     transform: translateY(0);
   }
-}
