@@ -75,7 +75,7 @@ header a {
 }
 
 .logo {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 70px;
 }
 
@@ -211,7 +211,7 @@ footer {
 
 .tour-overview .button {
     display: inline-block;
-    padding: 0.5em 1em;;
+    padding: 0.5em 1em;
     background-color: #BAB2B5;
     color: black;
     text-align: center;
@@ -342,9 +342,6 @@ footer {
 	display: flex;
 	justify-content: center;
 }
-=======
-	
-}
 
 /*----------------
 General animations
@@ -358,9 +355,7 @@ General animations
 .hover-shadow:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-<<<<<<< HEAD
->>>>>>> 6d12424c6a9fcad888f79c9d31e4da93d98ebae5
-=======
+
 
 @keyframes loaderDown {
   0% {
@@ -381,4 +376,3 @@ General animations
     transform: translateY(0);
   }
 }
->>>>>>> 7da7766307c1d1c33eb5cd9cc00321096e6a1d84
