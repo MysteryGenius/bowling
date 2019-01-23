@@ -343,6 +343,60 @@ footer {
 	justify-content: center;
 }
 
+/*------------------
+    Ancient page
+--------------------*/
+
+.ancient-description {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ancient-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.ancient-description img {
+    width: 300px;
+    display: block;
+    margin: 1vw;
+    border: 5px solid white;
+    box-shadow: 2px 3px 5px gray;
+    transition: 0.2s;
+}
+
+.ancient-description img:hover {
+    box-shadow: 3px 4px 7px gray;
+}
+
+.ancient-list-title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.ancient-list {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.ancient-list li {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.ancient-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ancient-form input {
+    margin: 10px 5px;
+}
+
 /*----------------
 General animations
 ------------------*/

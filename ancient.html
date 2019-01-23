@@ -5,7 +5,7 @@
 	<title>Tours</title>
 	<link rel="author" href="humans.txt" />
 	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico|Fredericka+the+Great" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -18,23 +18,83 @@
 			</ul>
 		</nav>
 	</header>
-	<h2 class="tour-title">Ancient Tour</h2>
-	<section class="tour_landing">
-		<p class="tour_image">
-			<span>Marvel at the wonders of the ancient world</span>
-		</p>
-	</section>
-	<section class="tour-descriptions">
-		<h3>Why?</h3>
-		<p></p>
-	</section>
-	<section class="nature_form">
-		<h3>Want to tour through the nature breeze ?</h3>
-		<p>sign up here!</p>
-	</section>
-	<form>
-		
-	</form>
+	<main>
+		<section class="ancient-description">
+			<h2 class="ancient-title">Ancient wonders of the world</h2>	
+			<p>Join us in this one in a lifetime experience and take the journey that all the great philosophers of the antiquity partook. Ancient wonders that showed the strength of their faith and riches of their empires</p>
+
+			<h3 class="ancient-list-title">The ancient wonders of the world</h3>
+			<ul class="ancient-list">
+				<li>
+					<img src="media/great pyramid of giza.jpg" alt="Great Pyramid at Giza">
+					<p>Great Pyramid at Giza</p>
+				</li>
+				<li>
+					<img src="media/hanging.png" alt="Hanging Gardens of Babylon">
+					<p>Hanging Gardens of Babylon</p>
+				</li>
+				<li>
+					<img src="media/zeus.jpg" alt="Statue of Zeus at Olympia">
+					<p>Statue of Zeus at Olympia</p>
+				</li>
+				<li>
+					<img src="media/artemis.jpg" alt="Temple of Artemis at Ephesus">
+					<p>Temple of Artemis at Ephesus</p>
+				</li>
+				<li>
+					<img src="media/mausoleum.jpg" alt="Mausoleum at Hapcarnassus">
+					<p>Mausoleum at Hapcarnassus</p>
+				</li>
+				<li>
+					<img src="media/colossus.jpg" alt="Colossus of Rhodes">
+					<p>Colossus of Rhodes</p>
+				</li>
+				<li>
+					<img src="media/lighthouse.jpg" alt="Lighthouse of Alexandria">
+					<p>Lighthouse of Alexandria</p>
+				</li>
+			</ul>
+		</section>
+		<section class="ancient-form">
+			<form>
+				<fieldset>
+	                <legend>Tour Detail</legend>
+	                <select name="Tourgroup" required>
+	                    <option value="" hidden="">Please Select...</option>
+	                    <option name="tour" value="Beautiful Sentosa Island Afternoon Tour">Aurora Tour</option>
+	                    <option name="tour" value=" Half Day City Tour"> Grqand Canyon Tour</option>
+	                    <option name="tour" value="Singapore River Cruise"0>Great Barrier Reef tour</option>
+	                    <option name="tour" value="Christmas Light-Up Tour">Mount Everest Tour</option>
+	                </select><br>
+
+	                <label>Date:</label>
+	                <input type="date" name="date" min="2018-10-29" max="2018-11-04" required><br>
+
+	                <label>Adult:</label>
+	                <input id="quant" name="adult" type="number" min="1" max="4" value="1" required><br>
+
+	                <label>Child:</label>
+	                <input id="quant" name="child" type="number" min="1" max="4" value="1" required>
+           		</fieldset>
+            	<fieldset>
+	                <legend>Customer Detail</legend>
+	                <label>Name:</label>
+	                <input type="text" name="name" autocomplete="on" required>
+
+	                <label>Email:</label>
+	                <input type="email" name="email" placeholder="Enter email addresses" required>
+
+               </fieldset>
+	            <fieldset>
+	                <label><b>Booking Detail</b></label>
+	            </fieldset>
+
+            <p></p>
+            <input type="submit" name="submit"class="submit">
+            <input type="reset" name="reset" class="reset">
+			</form>
+		</section>
+	</main>
 	<footer>
 
 	    <div class="footer-header">Discover the wonders of the world</div>
