@@ -6,6 +6,9 @@
 	<link rel="author" href="humans.txt" />
 	<link rel="stylesheet" href="css/styles.css">
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico|Fredericka+the+Great" rel="stylesheet">
+
 
 	<meta name="author" content="Adeline"/>
     <meta name="description" content="Display greeting" />
@@ -14,35 +17,67 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
+
 <body>
+    <header>
+        <div class="logo"><a href="#">7 Wonders</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+	
 	<h2 id="Natural_Tour">Natural Tour</h2>
 	<section class="nature_landing">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-	<h2 class="tour-title">Natural Tour</h2>
-	<section class="tour_landing">
-
-
-		<p class="tour_image">
-			<span>Enjoy the beauty of mother nature</span>
-		</p>
-	</section>
+	<h2 class="tour-title"></h2>
+	
 
 	<section class="information">
 
 	<section class="tour-descriptions">
 
 		<h3>why nature?</h3>
-		<p>For millennia, the treasures of Asia and the South Pacific have beckoned travelers from around the globe. Our diverse adventures are designed to bring you close to some of the world’s most amazing natural wonders: photograph India’s wild tigers and track rhinos in Nepal. Search for orangutans and proboscis monkeys in the rain forests of Borneo. Get close to cuddly pandas and golden snub-nosed monkeys in China. Watch whales and scout for kiwis in New Zealand. In remote wildlife reserves and national parks, our small groups stay at intimate lodges and inns where other travelers are few.</p>
+		<p class="tour-descriptions info">For millennia, the treasures of Asia and the South Pacific have beckoned travelers from around the globe. Our diverse adventures are designed to bring you close to some of the world’s most amazing natural wonders: photograph India’s wild tigers and track rhinos in Nepal. Search for orangutans and proboscis monkeys in the rain forests of Borneo. Get close to cuddly pandas and golden snub-nosed monkeys in China. Watch whales and scout for kiwis in New Zealand. In remote wildlife reserves and national parks, our small groups stay at intimate lodges and inns where other travelers are few.</p>
 	</section>
 	<section class="nature_form">
-		<h3>Want to tour through the nature breeze ?</h3>
-		<p>sign up here!</p>
+		<h3>Choose your own tour!</h3>
+		
 	</section>
-	<form>
-		<h1>Sightseeing Activities in Singapore Booking Form</h1>
+    <section class="Tourgroup">
+        <div class="naturaltours">
+            <img src="media/aurora.jpg">
+            <h1>The Aurora </h1>
+                <p>An aurora, sometimes referred to as polar lights, northern lights or southern lights, is a natural light display in the Earth's sky, predominantly seen in the high-latitude regions.</p>
+        </div>
+        <div class="naturaltours">
+            <img src="media/grand_can.jpg">
+            <h1>Grand Canyon </h1>
+                <p>Grand Canyon National Park, in Arizona, is home to much of the immense Grand Canyon, with its layered bands of red rock revealing millions of years of geological history. Viewpoints include Mather Point, Yavapai Observation Station and architect Mary Colter’s Lookout Studio and her Desert View Watchtower</p>
+        </div>
+        <div class="naturaltours">
+            <img src="media/great_barrier.jpg">
+            <h1>Great Barrier Reef </h1>
+                <p>The Great Barrier Reef is one of the seven wonders of the natural world, and pulling away from it, and viewing it from a greater distance, you can understand why. It is larger than the Great Wall of China and the only living thing on earth visible from space.</p>
+        </div>
+        <div class="naturaltours">
+            <img src="media/mt_everest.jpg">
+            <h1>Mount Everest</h1>
+                <p>Mount Everest, known in Nepali as Sagarmatha and in Tibetan as Chomolungma, is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. </p>
+        </div>
+
+            
+        
+    </section>
+	<section class="natural_form">
+     <form>
+        <h2>Sightseeing Activities in Singapore Booking Form</h2>
 
             <!-- tour -->
             <fieldset>
@@ -63,7 +98,6 @@
                 <input id="quant" name="adult" type="number" min="1" max="4" value="1" required>
                 <label>Child: &nbsp;</label>
                 <input id="quant" name="child" type="number" min="1" max="4" value="1" required>
-
             </fieldset>
             <fieldset>
                 <legend><b>Customer Detail</b></legend>
@@ -79,10 +113,25 @@
             </fieldset>
 
             <p></p>
-            <input type="submit" name="submit">
-            <input type="reset" name="reset">
-	</form>
+            <input type="submit" name="submit"class="submit">
+            <input type="reset" name="reset" class="reset">
+    </form>
+   
+    </section>
+<footer>
 
+    <div class="footer-header">Discover the wonders of the world</div>
+
+    <div class="socialmedia">
+        <a href="https://www.instagram.com"><img src="../media/social media/insta.svg" alt="Instagram" /></a>
+        <a href="https://www.facebook.com"><img src="../media/social media/facebook.svg" alt="Facebook" /></a>
+        <a href="https://www.twitter.com"><img src="../media/social media/twitter.svg" alt="Twitter" /></a>
+    </div>
+    
+    <div>Contact us at 7wonders@xyz.com</div>
+    <p class="desginers">Designed by : JayZ - Ana - Adel</p>
+
+</footer>
 
 </body>
 </html>
