@@ -127,6 +127,12 @@ footer {
     Home page 
 ----------------*/
 
+/*wdwd*/
+.wdwd {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*about*/
 .about {
     font-family: 'Oswald', sans-serif;
     width: 90%;
@@ -154,6 +160,8 @@ footer {
     object-fit: contain;
 }
 
+
+/*tours redirection*/
 .tour-overview {
     width: 90%;
     font-family: 'Oswald', sans-serif;
@@ -170,7 +178,7 @@ footer {
     justify-content: space-between;
 }
 
-.tour-overview h1, .about h1 {
+.tour-overview h1, .about h1, .wdwd h1 {
     width: 100%;
     color: #123C69;
     margin: 0 0 10px 0;
@@ -209,11 +217,13 @@ footer {
 
 .tour-overview .button {
     display: inline-block;
-    padding: 0.5em 1em;;
-    background-color: #BAB2B5;
-    color: black;
+    padding: 0.5em 1em;
+    background-color: #BAB2B5; /*#136645*/
+    color: black; /*white*/
+    border-radius: 0.2em;
     text-align: center;
     margin-top: 1em;
+    font-size: 1.5em;
 }
 
 /*---------------
