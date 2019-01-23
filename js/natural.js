@@ -15,6 +15,15 @@ const ancientTourPrices = (tour) => {
 		case "Great Barrier Reef tour":
 			return 500000
 			break;
+		case "Paricutin Tour":
+			return 500000
+			break;
+		case "Victoria Falls Tour":
+			return 500000
+			break;
+		case "Harbor of Rio de Janeiro Tour":
+			return 500000
+			break;
 	}
 }
 
